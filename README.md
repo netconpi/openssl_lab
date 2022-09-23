@@ -1,5 +1,7 @@
 
-# openssl_lab2
+# openssl_lab
+
+[Лабораторная работа 1. Много информации там, по методам шифрования тут](https://github.com/netconpi/openssl_rsa_des3)
 
 ## Навигация по репозиторию 
 1. [Задачи на лабораторную работу](https://github.com/netconpi/openssl_lab2/blob/master/task.md) 
