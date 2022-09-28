@@ -52,7 +52,7 @@ echo 1000 > serial
 Создать файл /openssl.cnf и заполнить содержимым. Для удобства, можете использовать CMD: 
 
 ```
-curl -o openssl.cnf https://raw.githubusercontent.com/netconpi/openssl_lab/master/openssl.cnf
+curl -o openssl.cnf https://raw.githubusercontent.com/netconpi/openssl_lab/master/cnf_lab3/openssl_ca.cnf
 ```
 
 Если вы все делаете с нуля, да даже если нет, то там пропущена 1 команда. А точнее, пропущено создание  закрытого ключа ca.key.pem 
@@ -197,8 +197,12 @@ Certificate:
 The SKID is used to create the trust chain not based on the certificate subject and issuer but on the certificate SKID and authority key identifier (AKID). This makes it easier to deal with situations where the same subject string is used with multiple CA certificates. While the RFC 3280 describes common ways to generate SKID the only real requirement is that the SKID of the CA certificate must match the AKID in all certificates issued by this CA.
 
 ```
-chmod 444 certs/ca.cert.pem
+curl -o openssl.cnf https://raw.githubusercontent.com/netconpi/openssl_lab/master/cnf_lab3/openssl_iner.cnf
 ```
+
+Шаг 12. Анализ отличий двух openssl cnf 
+
+![diff_check](https://static.ntcad.ru/kulikov/lab_images/diff_check.png)
 
 ```
 chmod 444 certs/ca.cert.pem
