@@ -475,3 +475,14 @@ Intermediate certificate содержит подробную информаци�
 Возводите ваше сообщение в степень e по модулю n. То есть, вычисляете 19 в степени 5 (2476099) и берёте остаток от деления на 21. Получается 10 — это ваши закодированные данные.
 
 ![Modular multiplication](https://static.ntcad.ru/kulikov/lab_images/rsa_multiplication.png)
+
+
+Касты данных 
+
+```
+openssl x509 -outform pem -in ca.cert.pem -out ready_cert.crt 
+```
+
+```
+openssl rsa -outform pem -in private.key.pem -out private.key 
+```
